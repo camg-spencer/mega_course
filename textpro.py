@@ -13,3 +13,20 @@ def sentence_maker(phrase):
     else:
         return f"{cap}."
     
+phrases = []
+    
+while True:
+    user_input = input("Say something: ")
+    if user_input == "\end":
+        break
+    else:
+        phrase = sentence_maker(user_input)
+        phrases.append(phrase)
+
+
+solution = ""
+for phrase in phrases:
+    solution += phrase
+    solution += " "
+
+print(solution)
