@@ -23,10 +23,5 @@ while True:
         phrase = sentence_maker(user_input)
         phrases.append(phrase)
 
-
-solution = ""
-for phrase in phrases:
-    solution += phrase
-    solution += " "
-
+solution = " ".join(phrases)
 print(solution)
